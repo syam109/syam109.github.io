@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: skyblue;
+}
+
+header .container {
+  width: 800px;
+  margin: 0 auto;
+  /* outline: 1px solid red; */
+  display: flex;
+
+}
+
+.container img {
+  /* border: 1px solid green; */
+  object-fit: contain;
+  vertical-align: bottom;
+  width: 300px;
+  height: 350px;
+ 
+}
+
+.container p {
+  /* border: 1px solid blue; */
+  font-size: 14px;
+  margin: 0;
+}
+
+.container h1 {
+  margin-left: 20px;
+  font-size: 32px;
+}
+
+.container ul {
+  font-size: 20px;
+}
+
+main h1 {
+  /* border: 1px solid blue; */
+  font-size: 24px;
+  text-align: center;
+}
+
+h2 {
+  /* border: 1px solid red; */
+  font-size: 20px;
+  color: #fff;
+  width: 600px;
+  margin: 0 auto;
+  position:absolute;
+  top: 730px;
+  left: 0px;
+  right: 0px;
+}
+
+section .home1 {
+  /* border: 1px solid red; */
+  background: #eee;
+  border-radius: 8px;
+  display: block;
+  width: 800px;
+  height: 1080px;
+  margin: 16px auto;
+}
+
+.home1 img {
+  width: 800px;
+  height: 1000px;
+  display: block;
+  object-fit: fill;
+  margin: 0 auto;
+}
+
+section .home {
+  /* border: 1px solid red; */
+  border-radius: 8px;
+  display: block;
+  width: 800px;
+  height: 450px;
+  margin: 16px auto;
+  background: #FFFFCC;
+}
+
+section img {
+  display: block;
+  object-fit: cover;
+  /* border: 1px solid blue; */
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+section p {
+  /* border: 1px solid green; */
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+.home1 .desc1 {
+  position: relative;
+  bottom: 560px;
+}
+
+.home1 .desc2 {
+  position: relative;
+  bottom: 540px;
+}
+
+section .university {
+  /* border: 1px solid blue; */
+  width: 800px;
+  margin: 16px auto;
+  background:#D9E5FF;
+  border-radius: 8px;
+}
+
+.university p {
+  width: 730px;
+  margin: 0 auto;
+  margin-top: 16px;
+  text-align: left;
+}
+
+.university img {
+  /* border: 1px solid red; */
+  width: 600px;
+}
