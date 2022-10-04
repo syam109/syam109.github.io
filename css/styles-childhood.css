@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  /* background-image: url("../image/princecover.png"); */
+  background-size: contain;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  left: 140px;
+  background: #fff;
+  opacity: 0.8;
+}
+
+header.page-header {
+  display: flex;
+  height: 80px;
+  min-width: 120px;
+  align-items: center;
+  color: #fff;
+  text-shadow: #000 0 0 .2em;
+  }
+
+header.page-header > h1 {
+  font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', cursive,
+      fantasy;
+  color: #ffff00;
+  margin: 10%;
+}
+
+.menu ul {
+  opacity: 0.8;
+  box-shadow: 4px 0 4px #fff;
+  background: #996600;
+  width: 140px;
+  padding: 0;
+  margin-top: 0;
+  border-radius: 8px;
+  /* 以下で設定する疑似要素を絶対配置するために必要 */
+  position: fixed;
+  cursor: pointer;
+}
+
+.menu li {
+  display: flex;
+  font-size: 14px;
+  width: 100px;
+  padding: 4px;
+  margin: 8px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li span::before {
+  content: "";
+  margin-top: 16px;
+  margin-left: 2px;
+  width: 1%;
+  height: 2px;
+  background: gold;
+  position: absolute;
+  transform: scale(0, 1);
+  transition: transform .3s;
+  transform-origin: bottom left;
+}
+
+li span:hover::before {
+  transform: scale(80, 1);
+}
+
+main h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+section .home1 {
+  background: #eee;
+  border-radius: 8px;
+  display: block;
+  width: 800px;
+  height: 720px;
+  margin: 16px auto;
+}
+
+.home1 img {
+  display: block;
+  object-fit: cover;
+  height: 80%;
+  margin: 0 auto;
+}
+
+.home1 p {
+  padding: 16px;
+}
+
+section .home2 {
+  background: #eee;
+  border-radius: 8px;
+  display: block;
+  width: 800px;
+  height: 800px;
+  margin: 16px auto;
+}
+
+.home2 img {
+  display: block;
+  object-fit: cover;
+  height: 80%;
+  margin: 0 auto;
+}
+
+.home2 p {
+  padding: 16px;
+}
+
+section .home3 {
+  background: #eee;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  height: 540px;
+  margin: 16px auto;
+}
+
+.home3 img {
+  display: flex;
+  object-fit: contain;
+  height: 400px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+.home3 p {
+  display: inline;
+  padding: 0 16px;
+}
+
+section .home {
+  border-radius: 8px;
+  display: block;
+  width: 800px;
+  height: 520px;
+  margin: 16px auto;
+  background: #FFFFCC;
+}
+
+section img {
+  display: block;
+  object-fit: cover;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+section p {
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+/* 恒雄のコメントここから */
+.tsuneo p {
+  position: relative;
+  font-size: 20px;
+  left: -300px;
+}
+section .comment {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  width: 770px;
+  padding: 0 16px;
+  overflow: hidden;
+}
+.comment img {
+  border-radius: 50%;
+  width: 100px;
+  height: 120px;
+  margin-right: 16px;
+  object-fit: none;
+}
+.stream {
+  background: #4682B4;
+  border-radius: 16px;
+  opacity: 0.9;
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0 1.5em 15px;
+  padding: 4px 8px;
+  min-width: 120px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.stream::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -14px;
+  border: 14px solid transparent;
+  border-right: 16px solid #4682B4;
+  z-index: 1;
+}
+.stream p {
+  width: 100%;
+  font-size: 20px;
+  color: #fff;
+  animation: stream 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform: translateY(100%)
+}
+@keyframes stream {  
+  100% {
+    transform: translateY(-100%);
+  }
+}
+/* 恒雄のコメントここまで */
+
+.catdance img {
+  display: flex;
+  object-fit: contain;
+  height: 180px;
+  width: 400px;
+  
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: none;
+  }
+  33% {
+    transform: translateX(300px);
+  }
+  66% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+/* 編集者コメント */
+.editor {
+  width:600px;
+  margin-left: 200px;
+}
+.editor .title {
+  width: 600px;
+  text-align: left;
+}
+
+.editor .ecomment {
+  text-align: left;
+  background: #BAD3FF;
+  border-radius: 8px;
+  padding: 8px;
+}
+/* 編集者コメントここまで */
+
+footer {
+  background: #F0E68C;
+  opacity: 0.6;
+  padding: 16px;
+  text-align: center;
+}
+
+footer .container {
+  display: inline-block;  
+}
+
+footer small {
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+footer ul {
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+footer li {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+
+footer li a{
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+}
